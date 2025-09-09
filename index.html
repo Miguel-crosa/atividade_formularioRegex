@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários</title>
+    <link rel="stylesheet" href="_css/main.css">
+</head>
+
+<body>
+
+    <h1 id="textoPrincipal"></h1>
+
+    <div class="quadrado">
+        <form action="action_page.html" method="get" onsubmit="return validarFormulario()">
+
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf01">
+            <p id="textoErro1"></p>
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome01">
+            <p id="textoErro2"></p>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco">
+            <br><br>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade">
+            <br><br>
+
+            <label for="estado">Estado:</label>
+            <input type="text" name="estado" id="estado">
+            <br><br>
+
+            <label for="nascimento">Nascimento:</label>
+            <input type="date" name="nascimento" id="nascimento">
+            <br><br>
+
+            <label for="salario">Salário:</label>
+            <input type="number" name="salario" id="salario">
+            <br><br>
+
+            <label for="e-mail">Email:</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+
+            <input type="submit" value="Clique para enviar">
+            <br><br>
+
+            <div class="quadrado-menor" hidden></div>
+        </form>
+
+    </div>
+
+
+    <script src="_js/main.js"></script>
+
+</body>
+
+</html>
